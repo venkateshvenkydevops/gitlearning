@@ -1,0 +1,111 @@
+<form action="/serverName.php" method="post">
+
+    <!--user account-->
+     
+    <fieldset id="fieldset-account">
+   
+      <legend>Account info</legend>
+   
+      <!-- wrap the input with the label to enlarge click area-->
+      <label>enter your email :<input type="email" name="usermail" placeholder="e.g. nobody@zmail.com" required> </label>
+   
+      <!-- or use for attribute in label tag -->
+      <label for="pwd">enter your password: </label>
+      <input type="password" id="pwd" name="pwd" placeholder="***">
+   
+      <!-- buttons -->
+      <button type="submit">login</button>
+      <button><a href="https://www.google.be" target="_blank">create an account</a></button>
+   
+    </fieldset>
+   
+    <!--Radio and checkbox-->
+     <fieldset>
+       <legend>nested fieldset</legend>
+     
+    <fieldset id="fieldset-trust">
+      
+    <legend>choose a level of trust</legend>
+      
+      <!-- Radio -->
+   
+     <input type="radio" id="neutral" name="trustlevel" value="neutral">
+     <label for="neutral">neutral</label>
+     <input type="radio" id="positive" name="trustlevel" value="positive">
+     <label for="positive">positive</label>
+     <input type="radio" id="negative" name="trustlevel" value="negative">
+     <label for="negative">negative</label>
+     
+     <br> 
+      
+     <label><input type="radio" name="trustlevel2" value="neutral">neutral</label>
+     <label><input type="radio" name="trustlevel2" value="positive">positive</label>
+     <label><input type="radio" name="trustlevel2" value="negative">negative</label>
+     
+      <br>
+      
+       <label><input type="radio" name="trustlevelcomplete" value="0">total distrust</label>
+       <label><input type="radio" name="trustlevelcomplete" value="1">1</label>
+       <label><input type="radio" name="trustlevelcomplete" value="2">2</label>
+       <label><input type="radio" name="trustlevelcomplete" value="3">3</label>
+       <label><input type="radio" name="trustlevelcomplete" value="4">4</label>
+       <label><input type="radio" name="trustlevelcomplete" value="5">5</label>
+       <label><input type="radio" name="trustlevelcomplete" value="6">6</label>
+       <label><input type="radio" name="trustlevelcomplete" value="7">7</label>
+       <label><input type="radio" name="trustlevelcomplete" value="8">8</label>
+       <label><input type="radio" name="trustlevelcomplete" value="9">9</label>
+       <label><input type="radio" name="trustlevelcomplete" value="10">total trust</label>
+      
+     </fieldset>
+     
+     <fieldset>
+       
+       <legend>choose the 3 institutions you trust the most</legend>
+       <!-- how to force max 3 values and not more how to avoid user choose 4-->
+       <label><input type="checkbox" name="instrust" value="police"> police</label>
+       <label><input type="checkbox" name="instrust" value="politicians"> politicians</label>
+       <label><input type="checkbox" name="instrust" value="legal-system"> legal system</label>
+       <label><input type="checkbox" name="instrust" value="political-parties"> political parties</label>
+       <label><input type="checkbox" name="instrust" value="parliament"> parliament</label>
+       <label><input type="checkbox" name="instrust" value="european-parliament"> european parliament</label>
+       <label><input type="checkbox" name="instrust" value="european-parliament"> united nations</label>
+       
+    </fieldset>
+   
+     </fieldset>
+    <!--select-->
+    <fieldset>
+   
+    <legend>drop down list</legend>
+   
+    <select name="trustLevel">
+      <option value="Negative">Negative</option>
+      <option value="Neutral" selected>Neutral</option>
+      <option value="Positive">Positive</option>
+    </select>
+   
+    <select name="trustLevelSelect" multiple size="3">
+      <option value="Negative">Negative</option>
+      <option value="Neutral">Neutral</option>
+      <option value="Positive">Positive</option>
+    </select>
+   
+    </fieldset>
+   
+   <fieldset>
+     <legend>finish</legend>
+   
+    <!--wrap the checkbox btw label, increase click area-->
+    <label><input type="checkbox" value="terms" required>I agree to the terms and conditions</label>
+   <br>
+    <label><input type="checkbox" value="newsletter">I want to join the newsletter</label>
+   <br>
+   <label>let us a message : <textarea name="comment" maxlength="120" placeholder="write us something"></textarea></label>
+   
+     <br>
+     
+    <!--submit and reset-->
+    <button type="submit">submit form</button>
+    <button type="reset">reset form</button>
+   </fieldset>
+   </form>
