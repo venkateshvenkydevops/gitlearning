@@ -24,3 +24,9 @@
  result.age=46;
  result.initial="V";
  console.log("rest",result);
+
+
+
+
+
+ 
